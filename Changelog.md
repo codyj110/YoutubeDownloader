@@ -1,3 +1,47 @@
+### v1.7.14 (29-Sep-2020)
+
+- Fixed various YouTube-related issues. Updated to YoutubeExplode v5.1.6.
+- Changed the order in which new downloads appear in the list so that newest downloads are at the top. (Thanks [@Max](https://github.com/badijm))
+
+### v1.7.13 (12-Sep-2020)
+
+- Fixed various YouTube-related issues. Updated to YoutubeExplode v5.1.5.
+
+### v1.7.12 (29-Jul-2020)
+
+- Fixed various YouTube-related issues. Updated to YoutubeExplode v5.1.3.
+
+### v1.7.11 (21-Jul-2020)
+
+- Fixed various YouTube-related issues. Updated to YoutubeExplode v5.1.2.
+
+### v1.7.10 (06-Jul-2020)
+
+- Fixed an issue where mp4 download options took much longer to download due to unnecessary transcoding.
+
+### v1.7.9 (02-Jul-2020)
+
+- Fixed various YouTube-related issues. Updated to YoutubeExplode v5.1.1.
+
+### v1.7.8 (10-May-2020)
+
+- Fixed various YouTube-related issues. Updated to YoutubeExplode v5.0.4.
+
+### v1.7.7 (07-May-2020)
+
+- Fixed various YouTube-related issues. Updated to YoutubeExplode v5.0.3.
+- Fixed an issue where conversion progress was not correctly reported. Updated to YoutubeExplode.Converter v1.5.1.
+
+### v1.7.6 (13-Apr-2020)
+
+- Fixed various YouTube-related issues. Updated to YoutubeExplode v5.0.1.
+- Improved media tagging. Now it's less reliant on MusicBrainz and should attempt to tag files more often.
+- Fixed some issues related to auto-update functionality.
+
+### v1.7.5 (16-Mar-2020)
+
+- Fixed various YouTube-related issues. Updated to YoutubeExplode v4.7.16.
+
 ### v1.7.4 (11-Mar-2020)
 
 - Fixed various YouTube-related issues. Updated to YoutubeExplode v4.7.14.

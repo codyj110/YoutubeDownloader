@@ -1,4 +1,4 @@
-﻿using YoutubeExplode.Models;
+﻿using YoutubeExplode.Videos;
 
 namespace YoutubeDownloader.Internal
 {
@@ -27,7 +27,7 @@ namespace YoutubeDownloader.Internal
 
             result += $".{format}";
 
-            return FileEx.MakeSafeFileName(result);
+            return PathEx.EscapeFileName(result);
         }
     }
 }

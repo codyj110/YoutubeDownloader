@@ -6,7 +6,7 @@ using YoutubeDownloader.Internal;
 using YoutubeDownloader.Services;
 using YoutubeDownloader.ViewModels.Components;
 using YoutubeDownloader.ViewModels.Framework;
-using YoutubeExplode.Models;
+using YoutubeExplode.Videos;
 
 namespace YoutubeDownloader.ViewModels.Dialogs
 {
@@ -73,15 +73,15 @@ namespace YoutubeDownloader.ViewModels.Dialogs
                 // If file exists - either skip it or generate a unique file path, depending on user settings
                 if (File.Exists(filePath))
                 {
-                    if (_settingsService.ShouldSkipExistingFiles && new FileInfo(filePath).Length > 0)
+                    if (_settingsService.ShouldSkipExistingFiles)
                         continue;
 
-                    filePath = FileEx.MakeUniqueFilePath(filePath);
+                    filePath = PathEx.MakeUniqueFilePath(filePath);
                 }
 
                 // Create empty file to "lock in" the file path
-                FileEx.CreateDirectoriesForFile(filePath);
-                FileEx.CreateEmptyFile(filePath);
+                PathEx.CreateDirectoryForFile(filePath);
+                PathEx.CreateEmptyFile(filePath);
 
                 // Create download view model
                 var download = _viewModelFactory.CreateDownloadViewModel(video, filePath, SelectedFormat);
